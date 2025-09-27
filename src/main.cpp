@@ -17,8 +17,7 @@ class $modify(LevelEditorLayerHook, LevelEditorLayer) {
         std::array<std::pair<float, GameObject*>, 7> closestObjs;
         closestObjs.fill({-FLT_MAX, nullptr});
 
-        // old habbits die hard
-        float endX = startPos->getPositionX() - 15.01;
+        float endX = startPos->getPositionX();
 
         for (auto obj : CCArrayExt<GameObject>(m_objects)) {
             if (obj->m_isDecoration) continue;
@@ -28,7 +27,7 @@ class $modify(LevelEditorLayerHook, LevelEditorLayer) {
 
             float objX = obj->getPositionX();
 
-            if (closestObjs[entry->second].first < objX && endX > objX && !obj->m_isNoTouch) {
+            if (closestObjs[entry->second].first <= objX && endX >= objX && !obj->m_isNoTouch) {
                 closestObjs[entry->second] = {objX, obj};
             }
         }

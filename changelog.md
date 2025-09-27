@@ -1,7 +1,11 @@
+## v1.0.1
+- **Fixed** \<\=
+-- **Fixed** offset cuz im dumb
+
 ## v1.0.0
 - initial release
 
-# bad old smart startpos mod i made a while ago
+# bad old smart startpos mod i made a while ago change log
 
 ## v1.1.2
 - Fixed changelog
