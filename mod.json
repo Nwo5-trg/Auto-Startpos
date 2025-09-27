@@ -1,0 +1,63 @@
+{
+	"geode": "4.8.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "nwo5.auto_startpos",
+	"name": "Smart Auto Startpos",
+	"version": "v1.0.0",
+	"developer": "Nwo5",
+	"description": "i have no idea wat smart startpos does icl",
+	"tags": ["utility", "editor", "enhancement", "offline"],
+	"links": {
+		"source": "https://github.com/Nwo5-trg/Auto-Startpos",
+		"community": "https://discord.gg/AeFeYWGUxZ"
+	},
+	"dependencies": {
+		"blueblock6.cleanstartpos": {
+			"version": ">=1.3.6",
+			"importance": "suggested"
+		}
+	},
+	"settings": {
+		"advanced-gravity": {
+			"type": "bool",
+			"name": "Advanced Gravity",
+			"description": "factors in blue/green orbs and stuff (assuming u hit every single one)",
+			"default": true
+		},
+		"0": {
+			"type": "bool",
+			"name": "Gamemodes",
+			"default": true
+		},
+		"1": {
+			"type": "bool",
+			"name": "Speed",
+			"default": true
+		},
+		"2": {
+			"type": "bool",
+			"name": "Gravity",
+			"default": true
+		},
+		"3": {
+			"type": "bool",
+			"name": "Dual",
+			"default": true
+		},
+		"4": {
+			"type": "bool",
+			"name": "Mini",
+			"default": true
+		},
+		"5": {
+			"type": "bool",
+			"name": "Mirror",
+			"default": true
+		}
+	}
+}
